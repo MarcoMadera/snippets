@@ -1,0 +1,80 @@
+{
+	"Import React": {
+    "prefix": "ir",
+    "body": [
+      "import React from 'react';"
+    ]
+	},
+	"Import React and component": {
+    "prefix": "irc",
+    "body": [
+      "import React, { Component } from 'react'"
+    ]
+	},
+	"Stateless function component": {
+    "prefix": "stlfc",
+    "body": [
+      "const $1 = props => {\n\treturn ( $0 );\n};\n\nexport default $1;"
+    ]
+	},
+	"Class component": {
+    "prefix": "rcc",
+    "body": [
+      "class $1 extends React.Component {\n\tstate = { $2 }\n\trender() {\n\t\treturn ( $0 );\n\t}\n}\n\nexport default $1;"
+    ]
+	},
+	"Render": {
+    "prefix": "r",
+    "body": [
+      "render() {\n\treturn (\n\t\t$0\n\t)\n}"
+    ]
+	},
+	"componentDidMount": {
+    "prefix": "cdm",
+    "body": [
+      "componentDidMount() {\n\t$0\n}"
+    ]
+	},
+	"componentDidUpdate": {
+    "prefix": "cdu",
+    "body": [
+      "componentDidUpdate(${1:prevProps} , ${2:prevState}) {\n\t$0\n}"
+    ]
+	},
+	"componentWillUnmount": {
+    "prefix": "cwu",
+    "body": [
+      "componentWillUnmount() {\n\t$0\n}"
+    ]
+	},
+	"componentDidCatch": {
+    "prefix": "cdc",
+    "body": [
+      "componentDidCatch(${1:error} , ${2:info}) {\n\t$0\n}"
+    ]
+	},
+	"useState": {
+    "prefix": "us",
+    "body": [
+      "const [${1:state}, ${2:setState}] = useState(${0:initialState});"
+    ]
+	},
+	"useEffect": {
+    "prefix": "ue",
+    "body": [
+      "useEffect(${0:didUpdate});"
+    ]
+	},
+	"direct useEffect": {
+    "prefix": "ued",
+    "body": [
+      "useEffect(() => {\n\t$0\n});"
+    ]
+	},
+	"useContext": {
+    "prefix": "uc",
+    "body": [
+      "const ${1:value} = useContext(${0:MyContext});"
+    ]
+	}
+}
