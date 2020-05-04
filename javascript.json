@@ -8,7 +8,13 @@
   "Direct Arrow function": {
     "prefix": "daf",
     "body": [
-      " const ${1:name} = (${2:arguments}) => (${0})"
+      "const ${1:name} = (${2:arguments}) => (${0})"
+    ]
+  },
+  "Direct Arrow function inside a class": {
+    "prefix": "dafc",
+    "body": [
+      "${1:name} = (${2:arguments}) => (${0})"
     ]
   },
   "Arrow function": {
@@ -20,7 +26,7 @@
   "Arrow function in class": {
     "prefix": "afc",
     "body": [
-      " ${1:name} = (${2:arguments}) => {\n\t$3\n\treturn ${0}\n}"
+      "${1:name} = (${2:arguments}) => {\n\t$3\n\treturn ${0}\n}"
     ]
   },
   "Immediately invoked arrow function": {
