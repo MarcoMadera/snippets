@@ -1,0 +1,44 @@
+{
+  "Print": {
+    "prefix": "l",
+    "body": [
+      "print($0)"
+    ]
+  },
+  "Main": {
+    "prefix": "m",
+    "body": [
+      "if __name__ == '__main__':\n\t${1:main}()"
+    ]
+  },
+  "If": {
+    "prefix": "i",
+    "body": [
+      "if (${1:condition}):\n\t$0"
+    ]
+  },
+  "If/else": {
+    "prefix": "ie",
+    "body": [
+      "if (${1:condition}):\n\t$2\nelse:\n\t$0"
+    ]
+  },
+  "Function": {
+    "prefix": "fc",
+    "body": [
+      "def $1($2):\n\t$0"
+    ]
+  },
+  "For": {
+    "prefix": "f",
+    "body": [
+      "for ${1:_} in range($2):\n\t$0"
+    ]
+  },
+  "While": {
+    "prefix": "w",
+    "body": [
+      "while $1:\n\t$0"
+    ]
+  }
+}
