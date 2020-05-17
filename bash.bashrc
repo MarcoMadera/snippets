@@ -1,0 +1,17 @@
+google(){ /c/Program\ Files\ \(x86\)/Google/Chrome/Application/Chrome.exe --app=https://www.google.com/search?q="$*";};
+
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+alias yt='/c/Program\ Files\ \(x86\)/Google/Chrome/Application/Chrome.exe --app=https://youtube.com'
+alias gh='/c/Program\ Files\ \(x86\)/Google/Chrome/Application/Chrome.exe --app=https://github.com'
+alias fb='/c/Program\ Files\ \(x86\)/Google/Chrome/Application/Chrome.exe --app=https://facebook.com'
+alias tw='/c/Program\ Files\ \(x86\)/Google/Chrome/Application/Chrome.exe --app=https://twitter.com'
+alias nx='/c/Program\ Files\ \(x86\)/Google/Chrome/Application/Chrome.exe --app=https://netflix.com'
+alias st='/c/Program\ Files\ \(x86\)/Google/Chrome/Application/Chrome.exe --app=https://stackoverflow.com'
+alias lc3='/c/Program\ Files\ \(x86\)/Google/Chrome/Application/Chrome.exe --app=http://localhost:3000/'
+alias lc9='/c/Program\ Files\ \(x86\)/Google/Chrome/Application/Chrome.exe --app=http://localhost:9000/'
+alias gg='google "$*"'
