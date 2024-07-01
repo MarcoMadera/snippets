@@ -3,7 +3,7 @@
 ## Run
 
 ```bash
-go run ./cmd/web"
+go run ./cmd/web
 ```
 
 The app will run in address :4000
