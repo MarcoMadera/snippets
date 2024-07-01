@@ -1,0 +1,19 @@
+{{define "base"}}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{template "title" .}} - Snippets</title>
+  </head>
+  <body>
+    <head>
+      <h1><a href="/">Snippets</a></h1>
+    </head>
+    <main>{{template "main" .}}</main>
+    <footer>
+      Created by <a href="https://marcomadera.com/">Marco Madera</a>
+    </footer>
+  </body>
+</html>
+{{end}}
