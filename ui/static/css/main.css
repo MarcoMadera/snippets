@@ -161,7 +161,7 @@ nav a.live:after {
 }
 
 a.button,
-input[type="submit"] {
+button[type="submit"] {
   background-color: #62cb31;
   border-radius: 3px;
   color: #ffffff;
@@ -173,7 +173,7 @@ input[type="submit"] {
 }
 
 a.button:hover,
-input[type="submit"]:hover {
+button[type="submit"]:hover {
   background-color: #4eb722;
   color: #ffffff;
   cursor: pointer;
@@ -190,6 +190,18 @@ form div:last-child {
 
 form input[type="radio"] {
   margin-left: 18px;
+}
+
+form#create-form fieldset {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  border: none;
+}
+
+form#create-form fieldset label {
+  display: flex;
+  gap: 8px;
 }
 
 form input[type="text"],
@@ -212,6 +224,7 @@ textarea {
 form label {
   display: inline-block;
   margin-bottom: 9px;
+  width: 100%;
 }
 
 .error {
