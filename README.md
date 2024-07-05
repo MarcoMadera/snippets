@@ -13,7 +13,7 @@ The app will run in address :4000
 Use the optional flag _addr_ with your address
 
 ```bash
-go run ./cmd/web -addr=":8000"
+go run ./cmd/web -addr=":3000"
 ```
 
 ## Usage
