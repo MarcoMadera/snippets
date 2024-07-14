@@ -43,12 +43,8 @@ func (app *application) snippetView(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	toast := app.sessionManager.PopString(r.Context(), "toast")
-
 	data := app.newTemplateData(r)
 	data.Snippet = snippet
-
-	data.Toast = toast
 
 	app.render(w, http.StatusOK, "view.tmpl.html", data)
 }
