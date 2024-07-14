@@ -298,7 +298,7 @@ button:hover {
   float: right;
 }
 
-div.flash {
+div.toast {
   color: #ffffff;
   font-weight: bold;
   background-color: #34495e;

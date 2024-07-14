@@ -43,8 +43,12 @@ func (app *application) snippetView(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	toast := app.sessionManager.PopString(r.Context(), "toast")
+
 	data := app.newTemplateData(r)
 	data.Snippet = snippet
+
+	data.Toast = toast
 
 	app.render(w, http.StatusOK, "view.tmpl.html", data)
 }
@@ -93,6 +97,8 @@ func (app *application) snippetCreatePost(w http.ResponseWriter, r *http.Request
 		app.serverError(w, err)
 		return
 	}
+
+	app.sessionManager.Put(r.Context(), "toast", "Snippet successfully created!")
 
 	http.Redirect(w, r, fmt.Sprintf("/snippet/view/%d", id), http.StatusSeeOther)
 }
